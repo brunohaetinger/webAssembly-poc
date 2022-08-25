@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="module">
+        import { add, factorial } from "./build/release.js";
+        document.getElementById("add-li").innerText = `Add: ${add(1,2)}`;
+        document.getElementById("factorial-li").innerText = `Factorial: ${factorial(6)}`;
+    </script>
+</head>
+
+<body>
+    <ul>
+
+        <li id="add-li"></li>
+        <li id="factorial-li"></li>
+    </ul>
+</body>
+
+</html>
